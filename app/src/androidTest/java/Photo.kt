@@ -1,0 +1,1 @@
+class Photo : ArrayList<PhotoItem>()

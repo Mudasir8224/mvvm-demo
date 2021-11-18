@@ -1,3 +1,5 @@
+package com.example.mvvmdemo.model
+
 data class PhotoItem(
     val albumId: Int,
     val id: Int,

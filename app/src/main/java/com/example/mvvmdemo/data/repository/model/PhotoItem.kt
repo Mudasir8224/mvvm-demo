@@ -1,4 +1,4 @@
-package com.example.mvvmdemo.model
+package com.example.mvvmdemo.data.repository.model
 
 data class PhotoItem(
     val albumId: Int,

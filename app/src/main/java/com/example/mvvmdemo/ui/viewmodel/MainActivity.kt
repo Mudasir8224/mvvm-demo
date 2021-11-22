@@ -1,6 +1,7 @@
 package com.example.mvvmdemo.ui.viewmodel
 
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
@@ -10,6 +11,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.mvvmdemo.R
 import com.example.mvvmdemo.data.repository.api.ApiHelper
 import com.example.mvvmdemo.data.repository.api.RetrofitBuilder
+import com.example.mvvmdemo.data.repository.model.Photo
 import com.example.mvvmdemo.data.repository.model.PhotoItem
 import com.example.mvvmdemo.databinding.ActivityMainBinding
 import com.example.mvvmdemo.ui.viewmodel.adapter.PhotoAdapter
@@ -56,6 +58,7 @@ class MainActivity : AppCompatActivity() {
                     }
                     Status.ERROR ->{
                         Toast.makeText(this, it.message, Toast.LENGTH_LONG).show()
+                        Log.d("TAG",it.message.toString())
                     }
                     Status.LOADING -> {
                         Toast.makeText(this, "loading", Toast.LENGTH_LONG).show()

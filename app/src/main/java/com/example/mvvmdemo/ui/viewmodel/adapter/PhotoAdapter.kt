@@ -8,6 +8,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.mvvmdemo.R
+import com.example.mvvmdemo.data.repository.model.Photo
 import com.example.mvvmdemo.data.repository.model.PhotoItem
 import com.example.mvvmdemo.databinding.PhotoRvBinding
 

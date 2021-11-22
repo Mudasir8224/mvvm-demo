@@ -7,4 +7,5 @@ interface ApiService {
 
     @GET("photos")
     suspend fun getPhotos(): List<PhotoItem>
+    //@Path(value = "id", encoded = true) id:Int
 }

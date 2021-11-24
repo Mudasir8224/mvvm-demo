@@ -11,7 +11,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.mvvmdemo.R
 import com.example.mvvmdemo.data.repository.api.ApiHelper
 import com.example.mvvmdemo.data.repository.api.RetrofitBuilder
-import com.example.mvvmdemo.data.repository.model.Photo
 import com.example.mvvmdemo.data.repository.model.PhotoItem
 import com.example.mvvmdemo.databinding.ActivityMainBinding
 import com.example.mvvmdemo.ui.viewmodel.adapter.PhotoAdapter
@@ -43,7 +42,6 @@ class MainActivity : AppCompatActivity() {
         binding.recyclerView.layoutManager = LinearLayoutManager(this)
         binding.recyclerView.adapter = adapter
     }
-
 
     private fun getData() {
         viewModel.getPhoto().observe(this, Observer {

@@ -5,7 +5,6 @@ import retrofit2.http.GET
 
 interface ApiService {
 
-    @GET("photos")
+    @GET("list")
     suspend fun getPhotos(): List<PhotoItem>
-    //@Path(value = "id", encoded = true) id:Int
 }

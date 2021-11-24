@@ -5,7 +5,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 object RetrofitBuilder {
 
-    private const val BASE_URL = "https://jsonplaceholder.typicode.com/"
+    private const val BASE_URL = "https://picsum.photos/v2/"
 
     private fun getRetrofit(): Retrofit {
         return Retrofit.Builder()

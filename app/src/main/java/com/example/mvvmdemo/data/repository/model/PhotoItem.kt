@@ -1,9 +1,6 @@
 package com.example.mvvmdemo.data.repository.model
 
 data class PhotoItem(
-    val albumId: Int,
-    val id: Int,
-    val thumbnailUrl: String,
-    val title: String,
-    val url: String
+    val url: String,
+    val download_url: String
 )

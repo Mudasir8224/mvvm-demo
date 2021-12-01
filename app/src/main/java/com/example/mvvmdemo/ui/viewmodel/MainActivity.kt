@@ -65,7 +65,7 @@ class MainActivity : AppCompatActivity() {
             }
         })
     }
-        //
+
     private fun retrieveList(photos: List<PhotoItem>) {
         adapter.apply {
             loadData(photos as ArrayList<PhotoItem>)

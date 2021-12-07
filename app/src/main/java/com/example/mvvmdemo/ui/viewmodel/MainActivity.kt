@@ -27,7 +27,6 @@ class MainActivity : AppCompatActivity() {
         setupViewModel()
         setRecyclerView()
         getData()
-
     }
 
     private fun setupViewModel() {
